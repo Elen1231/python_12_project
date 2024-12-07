@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/styles_additional.css') }}">
+    <title>Ошибка!</title>
+</head>
+<body>
+<div class="container">
+<h1>К сожалению, произошла ошибка :(</h1>
+
+<p>Проверьте правильность города который вы ввели, если и это не помогло вероятно на нашей стороне ошибка, попробуйте позднее!</p>
+
+<h3>Подробнее:</h3>
+<p>{{ error }}</p>
+
+<a href="/">Назад на главную</a>
+</div>
+</body>
+</html>

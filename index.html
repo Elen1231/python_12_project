@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{{ url_for('static',filename='styles/styles.css') }}">
+<title>Проверка погодных условий</title>
+</head>
+<body>
+<div class="container">
+<h1>Введите начальный и конечный города</h1>
+
+<form action="/" method="POST">
+<label for="start_city">Начальный город:</label>
+<input type="text" id="start_city" name="start_city" required><br><br>
+
+<label for="end_city">Конечный город:</label>
+<input type="text" id="end_city" name="end_city" required><br><br>
+
+<label for="mode">Режим оценки погоды:</label>
+<select name="mode" id="mode" required>
+<option value="south">Южный (предпочтение теплой погоды)</option>
+<option value="north">Северный (предпочтение холодной погоды)</option>
+</select>
+
+<button type="submit">Проверить погоду</button>
+</form>
+</div>
+</body>
+</html>
